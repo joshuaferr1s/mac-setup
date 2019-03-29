@@ -48,11 +48,18 @@ red_text "If you see the latest version continue, if not change it manually as s
 waiter
 
 green_text "Installing command line interfaces..."
-for cli in (git yarn fortune vcprompt)
+for cli in (git node "yarn --ignore-dependencies" fortune vcprompt)
 do
   echo "Installing $cli"
   brew install $cli
 done
+
+green_text "Installing Vue cli"
+yarn global add @vue/cli
+
+green_text "Installing expo-cli"
+yarn global add expo-cli
+
 green_text "Installing casks..."
 for app in (iterm2 alfred google-chrome google-backup-and-sync visual-studio-code discord figma atom postman)
 do
