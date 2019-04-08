@@ -61,7 +61,7 @@ green_text "Installing expo-cli"
 yarn global add expo-cli
 
 green_text "Installing casks..."
-for app in (iterm2 alfred google-chrome google-backup-and-sync visual-studio-code discord figma atom postman)
+for app in iterm2 alfred google-chrome google-backup-and-sync visual-studio-code discord figma atom postman
 do
   echo "Installing $app"
   brew cask install $app
@@ -71,6 +71,13 @@ green_text "Cleaning up brew install files"
 brew cleanup
 rm -f -r ~/Library/Caches/Homebrew/*
 
+green_text "Installing Google Fonts..."
+for font in SourceCodePro-Black.ttf SourceCodePro-Bold.ttf SourceCodePro-ExtraLight.ttf SourceCodePro-Light.ttf SourceCodePro-Medium.ttf SourceCodePro-Regular.ttf SourceCodePro-Semibold.ttf selima_.otf
+do
+  echo "Installing $font"
+  cp Fonts/${font} ~/Library/Fonts
+done
+
 green_text "Installing vscode extensions..."
 while read line; do code --install-extension "$line"; done < vscode/vscode-extensions.txt
 
@@ -78,7 +85,7 @@ green_text "Installing vscode user settings..."
 cp vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
 
 green_text "Updating dotfiles..."
-for dotfile in (.bash_profile .gitconfig .gitignore)
+for dotfile in .bash_profile .gitconfig .gitignore
 do
     rm ~/$(echo $dotfile)
     cp /dotfiles/$(echo $dotfile) ~/$(echo $dotfile)
