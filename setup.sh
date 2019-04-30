@@ -61,7 +61,7 @@ green_text "Installing expo-cli"
 yarn global add expo-cli
 
 green_text "Installing casks..."
-for app in iterm2 alfred google-chrome google-backup-and-sync visual-studio-code discord figma atom postman
+for app in iterm2 alfred google-chrome google-backup-and-sync visual-studio-code discord figma atom postman adobe-acrobat-reader
 do
   echo "Installing $app"
   brew cask install $app
