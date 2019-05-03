@@ -28,7 +28,7 @@ newRandomEmoji() {
 	setEmoji "$(random_element 👾 👨🏻‍🌾 👨🏻‍💻 🌵 🙈 🤠)"
 }
 
-fortune -s
+fortune -s | lolcat
 newRandomEmoji
 
 # Functions

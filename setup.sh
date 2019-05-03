@@ -48,7 +48,7 @@ red_text "If you see the latest version continue, if not change it manually as s
 waiter
 
 green_text "Installing command line interfaces..."
-for cli in (git node "yarn --ignore-dependencies" fortune vcprompt)
+for cli in (git node "yarn --ignore-dependencies" fortune vcprompt lolcat)
 do
   echo "Installing $cli"
   brew install $cli
