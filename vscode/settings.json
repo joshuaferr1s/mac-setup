@@ -1,32 +1,24 @@
 {
-    "editor.snippetSuggestions": "top",
-    "workbench.iconTheme": "material-icon-theme",
-    "editor.multiCursorModifier": "ctrlCmd",
-    "files.autoSave": "onFocusChange",
+    "workbench.colorTheme": "SynthWave '84",
+    "editor.fontFamily": "'Source Code Pro', monospace",
+    "editor.fontSize": 15,
+    "terminal.integrated.fontSize": 15,
+    "workbench.iconTheme": "simple-icons",
+    "editor.cursorBlinking": "smooth",
+    "editor.cursorSmoothCaretAnimation": true,
     "editor.tabSize": 2,
-    "editor.fontSize": 16,
-    "editor.formatOnPaste": false,
-    "editor.minimap.enabled": false,
-    "editor.fontLigatures": true,
-    "editor.lineHeight": 0,
-    "terminal.integrated.fontSize": 16,
+    "editor.formatOnPaste": true,
+    "editor.renderIndentGuides": true,
+    "telemetry.enableTelemetry": false,
+    "workbench.editor.highlightModifiedTabs": true,
     "explorer.openEditors.visible": 0,
+    "files.autoSave": "onFocusChange",
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.minimap.enabled": false,
+    "editor.snippetSuggestions": "top",
     "emmet.showAbbreviationSuggestions": false,
-    "workbench.colorCustomizations": {
-        "activityBarBadge.background": "#C6FF00",
-        "list.activeSelectionForeground": "#C6FF00",
-        "list.inactiveSelectionForeground": "#C6FF00",
-        "list.highlightForeground": "#C6FF00",
-        "scrollbarSlider.activeBackground": "#C6FF0050",
-        "editorSuggestWidget.highlightForeground": "#C6FF00",
-        "textLink.foreground": "#C6FF00",
-        "progressBar.background": "#C6FF00",
-        "pickerGroup.foreground": "#C6FF00",
-        "tab.activeBorder": "#C6FF00",
-        "notificationLink.foreground": "#C6FF00"
-    },
-    "eslint.validate": [
-        {
+    "workbench.startupEditor": "newUntitledFile",
+    "eslint.validate": [{
             "language": "vue",
             "autoFix": true
         },
@@ -38,8 +30,5 @@
             "language": "javascript",
             "autoFix": true
         }
-    ],
-    "workbench.startupEditor": "newUntitledFile",
-    "workbench.colorTheme": "Nord",
-    "editor.fontFamily": "'Source Code Pro', monospace"
+    ]
 }

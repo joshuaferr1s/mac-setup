@@ -7,8 +7,11 @@ Equinusocio.vsc-material-theme
 formulahendry.auto-close-tag
 formulahendry.auto-rename-tag
 HookyQR.beautify
+LaurentTreguier.vscode-simple-icons
+mikestead.dotenv
 octref.vetur
 PKief.material-icon-theme
+RobbOwen.synthwave-vscode
 toba.vsfire
 whizkydee.material-palenight-theme
-Zignd.html-css-class-completion
+wix.vscode-import-cost

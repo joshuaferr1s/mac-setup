@@ -28,7 +28,7 @@ newRandomEmoji() {
 	setEmoji "$(random_element 👾 👨🏻‍🌾 👨🏻‍💻 🌵 🙈 🤠)"
 }
 
-fortune -s | lolcat
+fortune -s | cowsay -f head-in | lolcat
 newRandomEmoji
 
 # Functions
@@ -70,4 +70,5 @@ alias gd="git diff";
 alias ga="git add .";
 alias gcm='git commit -m'
 alias gr='git reset --hard HEAD'
+alias gb='git branch -a'
 alias cleanBrew='brew cleanup && rm -f -r ~/Library/Caches/Homebrew/*'
