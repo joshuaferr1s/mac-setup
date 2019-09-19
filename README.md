@@ -12,23 +12,20 @@
     * Alfred
         * cmd+space to use - remove that for spotlight
         * Appearance -> Alfred macOS
-    * Google Chrome
-        * [Honey](https://chrome.google.com/webstore/detail/honey/bmnlcjabgnpnenekpadlanbbkooimhnj)
-        * [JSON Formatter](https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa)
-        * [Privacy Badger](https://chrome.google.com/webstore/detail/privacy-badger/pkehgijcmpdhfbdbbnkijodmdjhbjlgp)
-        * [React Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)
-        * [Vue.js devtools](https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
+    * Firefox
+        * [Honey](https://addons.mozilla.org/en-US/firefox/addon/honey/?src=search)
+        * [React Developer Tools](https://addons.mozilla.org/en-US/firefox/addon/react-devtools/)
+        * [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
 
 ## VS Code
 
 ### Themes & Icons
-* [Nord by arcticicestudio](https://marketplace.visualstudio.com/items?itemName=arcticicestudio.nord-visual-studio-code)
-* [Palenight by whizkydee](https://marketplace.visualstudio.com/items?itemName=whizkydee.material-palenight-theme)
-* [Material by Mattia Astorino](https://marketplace.visualstudio.com/items?itemName=Equinusocio.vsc-material-theme)
-* [Material Icon Theme by Philipp Kief](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
+* [SynthWave '84 by Robb Owen](https://marketplace.visualstudio.com/items?itemName=RobbOwen.synthwave-vscode)
+* [Simple icons by Laurent Tréguier](https://marketplace.visualstudio.com/items?itemName=LaurentTreguier.vscode-simple-icons)
 
 ### Pretty Code
 * [Beautify by HookyQR](https://marketplace.visualstudio.com/items?itemName=HookyQR.beautify)
+* [DotENV by mikestead](https://marketplace.visualstudio.com/items?itemName=mikestead.dotenv)
 * [ESLint by Dirk Baeumer](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 * [Firebase by toba](https://marketplace.visualstudio.com/items?itemName=toba.vsfire)
 * [Vetur by Pine Wu](https://marketplace.visualstudio.com/items?itemName=octref.vetur)
@@ -42,6 +39,8 @@
 * [Auto Close Tag by Jun Han](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag)
 * [Auto Rename Tag by Jun Han](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
 * [Bracket Pair Colorizer by CoenraadS](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer)
+* [Import Cost by Wix](https://marketplace.visualstudio.com/items?itemName=wix.vscode-import-cost)
+* [Live Server by Ritwick Dey](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
 
 ## Shell Script Help
 shells should look like so:
