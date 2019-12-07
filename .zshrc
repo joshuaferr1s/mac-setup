@@ -17,6 +17,7 @@ gc() { git commit -m "$*" }
 mkcd() { mkdir $1 && cd $1 }
 # Aliases
 alias gs='git status'
+alias ga='git add .'
 alias gp='git push'
 alias showHiddenFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder';
 alias hideHiddenFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder';
