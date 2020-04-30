@@ -5,6 +5,7 @@ CASK=(bitwarden nordvpn iterm2 firefox visual-studio-code discord insomnia adobe
 
 echo "Installing Xcode CLI and Homebrew..."
 xcode-select --install
+sudo -v
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 echo "Installing brews and casks..."
