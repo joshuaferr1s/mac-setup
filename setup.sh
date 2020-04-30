@@ -26,3 +26,6 @@ done < vscode/extensions.txt
 
 echo "Copying vscode settings.json..."
 cp "vscode/vscode-settings.json" "$HOME/Library/Application Support/Code/User/settings.json"
+
+echo "Making a dev directory..."
+mkdir "~/dev"

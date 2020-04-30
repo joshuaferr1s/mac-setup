@@ -11,6 +11,7 @@ Run the shell script using `sh setup.sh` in the terminal. This will install the 
 * Set the hostname to joshuas-mac
 * Copy dotfiles: .zshrc and .gitconfig
 * Configure vscode
+* Make a dev directory
 
 ## Manual Configuration
 
