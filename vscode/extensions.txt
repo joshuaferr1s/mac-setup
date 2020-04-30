@@ -1,0 +1,8 @@
+christian-kohler.npm-intellisense
+christian-kohler.path-intellisense
+CoenraadS.bracket-pair-colorizer
+dbaeumer.vscode-eslint
+dracula-theme.theme-dracula
+LaurentTreguier.vscode-simple-icons
+octref.vetur
+wix.vscode-import-cost

@@ -1,0 +1,26 @@
+{
+  "editor.fontFamily": "'Source Code Pro'",
+  "editor.fontSize": 15,
+  "terminal.integrated.fontSize": 15,
+  "workbench.iconTheme": "simple-icons",
+  "editor.cursorBlinking": "smooth",
+  "editor.cursorSmoothCaretAnimation": true,
+  "editor.tabSize": 2,
+  "editor.formatOnPaste": true,
+  "editor.renderIndentGuides": true,
+  "telemetry.enableTelemetry": false,
+  "workbench.editor.highlightModifiedTabs": true,
+  "explorer.openEditors.visible": 0,
+  "files.autoSave": "onFocusChange",
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.minimap.enabled": false,
+  "editor.snippetSuggestions": "top",
+  "emmet.showAbbreviationSuggestions": false,
+  "workbench.startupEditor": "newUntitledFile",
+  "eslint.validate": [
+    "vue",
+    "html",
+    "javascript"
+  ],
+  "workbench.colorTheme": "Dracula"
+}
