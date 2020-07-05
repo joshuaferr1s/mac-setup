@@ -1,6 +1,6 @@
 #!/bin/zsh
 
-BREWS=(git node cowsay fortune lolcat)
+BREWS=(git node deno cowsay fortune lolcat)
 CASK=(bitwarden nordvpn iterm2 firefox visual-studio-code discord insomnia adobe-acrobat-reader webex-meetings r rstudio)
 
 echo "Installing Xcode CLI and Homebrew..."
