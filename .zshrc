@@ -13,12 +13,15 @@ zmodload zsh/complist
 compinit
 _comp_options+=(globdots) #include hidden files
 
+# Paths
+export PATH="/Users/joshua/.deno/bin:$PATH"
+
 EMOJI=(👾 👨🏻‍🌾 👨🏻‍💻 🌵 🙈 🤠)
 
 setopt AUTO_CD
 setopt PROMPT_SUBST
 fortune -s | cowsay -f bunny | lolcat
-PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
+PS1="%B%{$fg[red]%}[%{$fg[blue]%}%n@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
 
 # Functions
 gc() { git commit -m "$*" }

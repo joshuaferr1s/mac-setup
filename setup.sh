@@ -1,7 +1,7 @@
 #!/bin/zsh
 
 BREWS=(git node cowsay fortune lolcat)
-CASK=(bitwarden nordvpn iterm2 firefox visual-studio-code discord insomnia adobe-acrobat-reader)
+CASK=(bitwarden nordvpn iterm2 firefox visual-studio-code discord insomnia adobe-acrobat-reader webex-meetings r rstudio)
 
 echo "Installing Xcode CLI and Homebrew..."
 xcode-select --install
