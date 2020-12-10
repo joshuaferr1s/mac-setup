@@ -1,5 +1,4 @@
 {
-  "editor.fontFamily": "'Source Code Pro'",
   "editor.fontSize": 15,
   "terminal.integrated.fontSize": 15,
   "workbench.iconTheme": "simple-icons",
@@ -18,6 +17,7 @@
   "emmet.showAbbreviationSuggestions": false,
   "workbench.startupEditor": "newUntitledFile",
   "eslint.validate": [
+    "jsx",
     "vue",
     "html",
     "javascript"

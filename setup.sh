@@ -1,24 +1,27 @@
 #!/bin/zsh
 
-BREWS=(git node deno cowsay fortune lolcat)
-CASK=(bitwarden nordvpn iterm2 firefox visual-studio-code discord insomnia adobe-acrobat-reader webex-meetings r rstudio)
-
+# Install Xcode command lines tools and Homebrew
 echo "Installing Xcode CLI and Homebrew..."
 xcode-select --install
 sudo -v
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-echo "Installing brews and casks..."
+# Brew Install
+BREWS=(git node fortune)
 brew install ${BREWS[@]}
+
+# Brew Cask Install
+CASKS=(bitwarden iterm2 firefox visual-studio-code discord insomnia adobe-acrobat-reader webex-meetings r rstudio slack google-chrome)
 brew cask install ${CASKS[@]}
 
-echo "Setting the hostname to joshuas-mac..."
+# Set the hostname to joshuas-mac
 hostname -s joshuas-mac
 
-echo "Copying dotfiles..."
+# Copy dotfiles
 cp .gitconfig ~/.gitconfig
 cp .zshrc ~/.zshrc
 
+# Configure vscode
 echo "Installing vscode extensions..."
 while IFS="" read -r p || [ -n "$p" ]
 do
@@ -28,5 +31,5 @@ done < vscode/extensions.txt
 echo "Copying vscode settings.json..."
 cp "vscode/vscode-settings.json" "$HOME/Library/Application Support/Code/User/settings.json"
 
-echo "Making a dev directory..."
+# Creates a dev directory
 mkdir "~/dev"

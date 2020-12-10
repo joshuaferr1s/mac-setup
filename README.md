@@ -1,31 +1,44 @@
 # Joshua Ferris's Mac Setup
 
-## Shell script
+> In an ideal world the shell script would take care of everything but manual configuration is still required and listed below when needed.
 
-Run the shell script using `sh setup.sh` in the terminal. This will install the following:
+## Shell Script
 
-* Xcode command line tools
-* Homebrew
-* Brew installs: git, node, cowsay, fortune, lolcat
-* Brew cask installs: bitwarden, nordvpn, iterm2, firefox, visual-studio-code, discord, insomnia, adobe-acrobat-reader
-* Set the hostname to joshuas-mac
-* Copy dotfiles: .zshrc and .gitconfig
-* Configure vscode
-* Make a dev directory
+Run the shell script using `sh setup.sh`. This will do the following:
 
-## Manual Configuration
+- Install Xcode command line tools
+- Install Homebrew
+- Brew Install: git, node, fortune
+- Brew Cask Install: bitwarden, iterm2, firefox, visual-studio-code, discord, insomnia, adobe-acrobat-reader, webex-meetings r, rstudio, slack, google-chrome
+- Set the hostname to joshuas-mac
+- Copy dotfiles: .zshrc and .gitconfig
+- Configures vscode
+- Creates a dev directory
+
+## Manual Configurations
 
 ### iTerm2
 
-* General > Working Directory: Reuse previous session's directory
-* Profiles > Colors > Color Presets: [Dracula](https://draculatheme.com/iterm)
-* Key > Load preset - Natural text editing
-* Window > 80x20
-* Text > Source Code Pro
-* Text > Font size: 14
-* Appearance > Theme: Minimal
+- General > Working Directory: Reuse previous session's directory
+- Profiles > Colors > Color Presets: [Dracula](https://draculatheme.com/iterm)
+- Key > Load preset - Natural text editing
+- Window > 80x20
+- Text > Source Code Pro
+- Text > Font size: 14
+- Appearance > Theme: Minimal
+
+### Safari
+
+- Install bitwarden extension
+- Login to jajjferris & josh.ferris14
 
 ### Firefox
 
-* Sign in for extensions and bookmarks
-* Theme: Dracula
+- Install bitwarden extension
+- Login to school email
+
+### Chrome
+
+- Install proctorio extension
+- Install bitwarden extension
+- Login to school email
