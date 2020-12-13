@@ -21,4 +21,4 @@ alias hideHiddenFiles='defaults write com.apple.finder AppleShowAllFiles NO; kil
 alias reload='source ~/.zshrc'
 alias brewup='brew update; brew upgrade; brew cleanup; brew doctor'
 alias dixonServer='ssh joshua@192.168.1.200'
-alias pclear='clear && fortune -s | cowsay -f bunny | lolcat'
+alias pclear='clear && fortune -s'
