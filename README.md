@@ -1,44 +1,28 @@
 # Joshua Ferris's Mac Setup
 
-> In an ideal world the shell script would take care of everything but manual configuration is still required and listed below when needed.
+> In an ideal world the shell script would take care of everything but manual configuration is still required.
 
-## Shell Script
+## Instructions
 
-Run the shell script using `sh setup.sh`. This will do the following:
+Run the shell script using `sh setup.sh`.
 
-- Install Xcode command line tools
-- Install Homebrew
-- Brew Install: git, node, fortune
-- Brew Cask Install: bitwarden, iterm2, firefox, visual-studio-code, discord, insomnia, adobe-acrobat-reader, webex-meetings r, rstudio, slack, google-chrome
-- Set the hostname to joshuas-mac
-- Copy dotfiles: .zshrc and .gitconfig
-- Configures vscode
-- Creates a dev directory
+Enable tap to click in mac settings.
 
-## Manual Configurations
+Add the following to the start of the `.zshrc`: `fortune -s`
 
-### iTerm2
+Add the following aliases to the `.zshrc`
 
-- General > Working Directory: Reuse previous session's directory
-- Profiles > Colors > Color Presets: [Dracula](https://draculatheme.com/iterm)
-- Key > Load preset - Natural text editing
-- Window > 80x20
-- Text > Source Code Pro
-- Text > Font size: 14
-- Appearance > Theme: Minimal
-
-### Safari
-
-- Install bitwarden extension
-- Login to jajjferris & josh.ferris14
-
-### Firefox
-
-- Install bitwarden extension
-- Login to school email
-
-### Chrome
-
-- Install proctorio extension
-- Install bitwarden extension
-- Login to school email
+```sh
+mkcd() { mkdir $1 && cd $1 }
+gc() { git commit -m "$*" }
+alias gs='git status'
+alias ga='git add -A'
+alias gp='git push'
+alias commit='git add -A; git commit -m'
+alias showHiddenFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder';
+alias hideHiddenFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder';
+alias reload='source ~/.zshrc'
+alias brewup='brew update; brew upgrade; brew cleanup; brew doctor'
+alias dixonServer='ssh joshua@192.168.1.200'
+alias pclear='clear && fortune -s'
+```
