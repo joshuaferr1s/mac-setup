@@ -1,35 +1,32 @@
 #!/bin/zsh
 
-# Install Xcode command lines tools and Homebrew
 echo "Installing Xcode CLI and Homebrew..."
 xcode-select --install
 sudo -v
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-# Brew Install
-BREWS=(git node fortune)
+echo "Install oh-my-zsh"
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+echo "Install Brew CLIs"
+BREWS=(git gh nvm fortune)
 brew install ${BREWS[@]}
 
-# Brew Cask Install
-CASKS=(bitwarden iterm2 firefox visual-studio-code discord insomnia adobe-acrobat-reader webex-meetings r rstudio slack google-chrome)
-brew cask install ${CASKS[@]}
+echo "Install Brew Casks"
+CASKS=(adobe-acrobat-reader brave-browser discord docker expressvpn figma github hyper rstudio visual-studio-code zoom)
+brew install --cask ${CASKS[@]}
 
-# Set the hostname to joshuas-mac
-hostname -s joshuas-mac
+echo "Create nvm folder"
+mkdir ~/.nvm
 
-# Copy dotfiles
-cp .gitconfig ~/.gitconfig
+echo "Configure zsh"
 cp .zshrc ~/.zshrc
 
-# Configure vscode
-echo "Installing vscode extensions..."
-while IFS="" read -r p || [ -n "$p" ]
-do
-  code --install-extension $p
-done < vscode/extensions.txt
+echo "Configure Hyper"
+cp .hyper.js ~/.hyper.js
 
-echo "Copying vscode settings.json..."
-cp "vscode/vscode-settings.json" "$HOME/Library/Application Support/Code/User/settings.json"
+echo "Set hostname"
+hostname -s joshuas-mac
 
-# Creates a dev directory
-mkdir "~/dev"
+echo "Create 'dev' directory"
+mkdir ~/dev

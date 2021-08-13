@@ -1,17 +1,13 @@
-# Prompt
-autoload -U colors && colors
-fortune -s
-PS1="%B%{$fg[red]%}[%{$fg[blue]%}%n@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%} >%b "
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
 
-# Options
-HISTSIZE=500
-SAVEHIST=500
-HISTFILE=~/.cache/zsh/history
-setopt AUTO_CD
+# Prompt
+fortune -s
+autoload -U promptinit; promptinit
+prompt pure
 
 # Aliases
 mkcd() { mkdir $1 && cd $1 }
-gc() { git commit -m "$*" }
 alias gs='git status'
 alias ga='git add -A'
 alias gp='git push'
@@ -22,3 +18,4 @@ alias reload='source ~/.zshrc'
 alias brewup='brew update; brew upgrade; brew cleanup; brew doctor'
 alias dixonServer='ssh joshua@192.168.1.200'
 alias pclear='clear && fortune -s'
+alias iCloud='cd "/Users/joshua/Library/Mobile Documents/com~apple~CloudDocs/"'
