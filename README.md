@@ -11,4 +11,4 @@ Run the shell script using `sh setup.sh`.
 - Sign in to all accounts
 - Enable iCloud storage sync for desktop and documents
 - Install Office365
-- Setup Brave browser for Miami usage
+- Setup Chrome browser for Miami usage

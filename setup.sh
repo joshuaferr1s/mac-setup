@@ -9,11 +9,11 @@ echo "Install oh-my-zsh"
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 echo "Install Brew CLIs"
-BREWS=(git gh nvm fortune)
+BREWS=(git gh nvm fortune r pure)
 brew install ${BREWS[@]}
 
 echo "Install Brew Casks"
-CASKS=(adobe-acrobat-reader brave-browser discord docker expressvpn figma github hyper rstudio visual-studio-code zoom)
+CASKS=(adobe-acrobat-reader discord docker expressvpn figma github google-chrome hyper rstudio visual-studio-code zoom)
 brew install --cask ${CASKS[@]}
 
 echo "Create nvm folder"
