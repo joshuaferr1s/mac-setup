@@ -24,3 +24,6 @@ hostname -s joshuas-mac
 
 echo "Create 'dev' directory"
 mkdir ~/dev
+
+echo "Configure Git"
+git config --global init.defaultBranch main
