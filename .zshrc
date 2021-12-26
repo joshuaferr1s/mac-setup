@@ -1,8 +1,12 @@
+# Enable zsh features
+autoload -Uz compinit && compinit
+autoload -U promptinit && promptinit
+
 # Startup Quote
 fortune -s
 
 # Configure Prompt
-PROMPT='%~ > '
+PROMPT=$'%{\e[0;36m%}%~ > %{\e[0m%}'
 
 # Aliases
 mkcd() { mkdir $1 && cd $1 }

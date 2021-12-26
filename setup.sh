@@ -10,7 +10,7 @@ BREWS=(git fortune r)
 brew install ${BREWS[@]}
 
 echo "Install Brew Casks"
-CASKS=(discord expressvpn figma github google-chrome google-drive iterm2 rstudio visual-studio-code zoom)
+CASKS=(expressvpn figma github google-chrome google-drive iterm2 rstudio visual-studio-code zoom)
 brew install --cask ${CASKS[@]}
 
 echo "Configure zsh"
