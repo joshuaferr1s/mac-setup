@@ -12,3 +12,6 @@ Run the shell script using `sh setup.sh`.
 - Enable iCloud storage sync for desktop and documents
 - Install Office365
 - Setup Chrome browser for Miami usage
+- Install Source Code Pro font
+- Configure iterm2
+  - profile file in this directory
