@@ -6,11 +6,11 @@ sudo -v
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 echo "Install Brew CLIs"
-BREWS=(git fortune r)
+BREWS=(git fortune)
 brew install ${BREWS[@]}
 
 echo "Install Brew Casks"
-CASKS=(expressvpn figma github google-chrome google-drive iterm2 rstudio visual-studio-code zoom)
+CASKS=(figma iterm2 visual-studio-code)
 brew install --cask ${CASKS[@]}
 
 echo "Configure zsh"

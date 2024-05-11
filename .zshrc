@@ -1,12 +1,10 @@
-# Enable zsh features
-autoload -Uz compinit && compinit
-autoload -U promptinit && promptinit
+# Environment Variables
+export HOMEBREW_NO_ANALYTICS=1
+export HOMEBREW_INSTALL_BADGE="🥤"
+export PATH="$HOME/.local/bin:$PATH"
 
 # Startup Quote
 fortune -s
-
-# Configure Prompt
-PROMPT=$'%{\e[0;36m%}%~ > %{\e[0m%}'
 
 # Aliases
 mkcd() { mkdir $1 && cd $1 }
